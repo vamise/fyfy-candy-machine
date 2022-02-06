@@ -17,7 +17,7 @@
   /***********************************/
   // Customize the app by changing the following variables.
   const TITLE = "FYFY NFT MINTER";
-  const DESCRIPTION = "A collection of on the blockchain";
+  const DESCRIPTION = "A collection of on the Solana blockchain";
   const HEADER_TITLE = "Fyfy Social Club";
   const HEADER_LINK = "https://mint.fyfy.app";
   // Your image or GIF needs to be in the /public folder for this to work
@@ -64,7 +64,7 @@
 
   onMount(async () => {
     solana = (window as any).solana;
-    // Check if environement variables are populated
+    // Check if environment variables are populated
     errorOcurred = checkEnvironmentVariables();
     if (errorOcurred) {
       return;
